@@ -35,7 +35,7 @@
     .nav a.active,.nav a:hover{background:linear-gradient(135deg,var(--accent-1),var(--accent-2));color:#fff}
 
     /* Hero */
-    .hero{padding-top:120px;padding-bottom:100px;background:linear-gradient(180deg,rgba(164,80,139,0.12),rgba(95,10,135,0.08))}
+    .hero{padding-top:120px;padding-bottom:0px;background:linear-gradient(180deg,rgba(164,80,139,0.12),rgba(95,10,135,0.08))}
     .hero .hero-inner{display:grid;grid-template-columns:1.2fr 0.8fr;align-items:center;gap:28px}
     .hero .hero-right{display:flex;justify-content:center}
     .hero .profile{width:260px;max-width:100%;border-radius:50%;border:4px solid #fff;box-shadow:var(--shadow)}
@@ -56,7 +56,7 @@
     section{padding:90px 0}
     section.alt{background:linear-gradient(180deg,rgba(95,10,135,0.07),rgba(164,80,139,0.05))}
     h2.section-title{text-align:center;font-size:28px;margin-bottom:26px;background:linear-gradient(135deg,var(--accent-2),var(--accent-mid));-webkit-background-clip:text;background-clip:text;color:transparent}
-    .section-lead{text-align:center;color:var(--muted);margin-bottom:36px}
+    .section-lead{text-align:center;color:var(--muted);margin-bottom:0px}
 
     /* Skills */
     .skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
@@ -71,7 +71,6 @@
     .card h3{margin:6px 0}
     .card ul{margin:8px 0 0 18px}
     .card .btn{margin-top:12px;font-size:14px;padding:8px 14px}
-    .card img{width:100%;border-radius:12px;margin-bottom:10px}
 
     /* Certificates */
     .certs{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:22px}
@@ -119,7 +118,12 @@
   I'm a Computer & Information Science student at Ain Shams University.  
   I specialize in Back-End development and Machine Learning, building solutions that solve real-world problems.
 </p>        <div class="cta">
-          <a class="btn primary" href="Ereny_Adel_s_Resume.pdf" download>Download CV</a>
+      <a class="btn primary"
+   href="https://drive.google.com/uc?export=download&id=1QVBCgp9XnbhEV4ETTx_zueTADSfWZ_wn"
+   target="_blank">
+  <i class="fa-solid fa-download"></i> Download CV
+</a>
+
           <a class="btn ghost" href="#projects">View Projects</a>
         </div>
       </div>
@@ -134,7 +138,10 @@
   <section id="about" class="alt" data-aos="fade-up">
     <div class="container">
       <h2 class="section-title">About Me</h2>
-      <p class="section-lead">I'm a Scientific Computing major who enjoys building across Web, Mobile, and ML. I teach coding, lead camps, and collaborate in student activities. Currently focused on full-stack .NET, Flutter, and practical data science.</p>
+      <p class="section-lead">I'm a Full Stack .NET Developer</p>
+      <p class="section-lead">Strong background in programming (Java, C++, C#, Python),Passionate about backend development and machine learning.</p>
+      <p class="section-lead">,Highly committed to work and always prioritize tasks effectively,Creative and innovative in ideas and problem-solving.</p>
+      <p class="section-lead">Fast learner, quickly adapting to new technologies,Capable of handling multiple tasks simultaneously with focus on quality.</p>
     </div>
   </section>
 
@@ -145,10 +152,11 @@
       <div class="skills">
         <div class="skill"><i class="fa-solid fa-terminal"></i><div><h3>Programming</h3><p>C++, Java, C, Python</p></div></div>
         <div class="skill"><i class="fa-solid fa-globe"></i><div><h3>Web</h3><p>HTML, CSS, JS, Bootstrap, ASP.NET MVC</p></div></div>
-        <div class="skill"><i class="fa-solid fa-mobile-screen-button"></i><div><h3>Mobile</h3><p>Flutter (Dart), Firebase</p></div></div>
         <div class="skill"><i class="fa-solid fa-database"></i><div><h3>Databases</h3><p>SQL Server, ERD, Firebase</p></div></div>
         <div class="skill"><i class="fa-solid fa-rocket"></i><div><h3>ML</h3><p>Scikit-learn, XGBoost, SVM</p></div></div>
+         <div class="skill"><i class="fa-solid fa-terminal"></i><div><h3>problem Solving</h3><p>C++, Competitive Programming</p></div></div>
         <div class="skill"><i class="fa-brands fa-git-alt"></i><div><h3>Tools</h3><p>GitHub, VS Code, IntelliJ, Qt</p></div></div>
+         <div class="skill"><i class="fa-solid fa-mobile-screen-button"></i><div><h3>Mobile</h3><p>Flutter (Dart), Firebase</p></div></div>
       </div>
     </div>
   </section>
@@ -158,49 +166,43 @@
     <div class="container">
       <h2 class="section-title">Projects</h2>
       <div class="projects">
-
+         <div class="card">
+  <h3>Bookstore</h3><p>C#, ASP.NET, Database</p>
+  <ul>
+    <li>Developed a full-stack bookstore app with user auth and DB integration.</li>
+    <li>Includes cart, orders, and search functionality.</li>
+  </ul>
+  <a class="btn ghost" href="bookstore.html"><i class="fa-solid fa-eye"></i> View Project</a>
+</div>
         <div class="card">
-          <img src="bookstore.jpg" alt="BookStore Project">
-          <h3>BookStore System</h3><p>ASP.NET MVC, Entity Framework</p>
-          <ul>
-            <li>Full-stack web application for managing online bookstore.</li>
-            <li>Implemented MVC architecture and APIs.</li>
-            <li>Built in just 5 days with team collaboration.</li>
-          </ul>
-          <a class="btn ghost" href="#" target="_blank"><i class="fa-brands fa-github"></i> View Code</a>
-        </div>
-
-        <div class="card">
-          <h3>Courses Registration System</h3><p>C++, Qt Framework</p>
-          <ul><li>Course registration and grading system with GUI.</li><li>Used Linked Lists, Graphs, Stacks, Queues.</li></ul>
-          <a class="btn ghost" href="#" target="_blank"><i class="fa-brands fa-github"></i> View Code</a>
-        </div>
-        <div class="card">
-          <h3>Hospital Readmission Prediction</h3><p>Python, ML</p>
-          <ul><li>Predicted 30-day readmission for diabetic patients.</li><li>Compared Logistic Regression, RF, XGBoost, SVM.</li></ul>
-          <a class="btn ghost" href="#" target="_blank"><i class="fa-brands fa-github"></i> View Code</a>
-        </div>
-        <div class="card">
-          <h3>Parking Lot System</h3><p>Java, OOP, JavaFX</p>
-          <ul><li>Developed GUI for vehicle parking system.</li></ul>
-          <a class="btn ghost" href="#" target="_blank"><i class="fa-brands fa-github"></i> View Code</a>
-        </div>
+       <h3>Courses Registration System</h3><p>C++, Qt Framework</p>
+       <ul>
+       <li>Course registration and grading system with GUI.</li>
+       <li>Used Linked Lists, Graphs, Stacks, Queues.</li>
+        </ul>
+        <a class="btn ghost" href="courses.html"><i class="fa-solid fa-eye"></i> View Project</a>
+       </div>
+       
         <div class="card">
           <h3>Cinema Management System</h3><p>Oracle, SQL</p>
           <ul><li>Designed ERD and Schema for cinema DB.</li></ul>
-          <a class="btn ghost" href="#" target="_blank"><i class="fa-brands fa-github"></i> View Code</a>
         </div>
-        <div class="card">
-          <h3>E-commerce App</h3><p>Flutter, Firebase</p>
-          <ul><li>Android shopping app with Firebase Auth & API.</li></ul>
-          <a class="btn ghost" href="#" target="_blank"><i class="fa-brands fa-github"></i> View Code</a>
-        </div>
-        <div class="card">
-          <h3>Website</h3><p>HTML, CSS, JS, Bootstrap</p>
-          <ul><li>Created responsive multi-page website.</li></ul>
-          <a class="btn ghost" href="#" target="_blank"><i class="fa-brands fa-github"></i> View Code</a>
-        </div>
-      </div>
+      <div class="card">
+  <h3>Website</h3><p>HTML, CSS, JS, Bootstrap</p>
+  <ul>
+    <li>Created responsive multi-page website.</li>
+  </ul>
+  <a class="btn ghost" href="website.html"><i class="fa-solid fa-eye"></i> View Project</a>
+</div>
+     <div class="card">
+  <h3>Hospital Readmission Prediction</h3><p>Python, ML</p>
+  <ul>
+    <li>Predicted 30-day readmission for diabetic patients.</li>
+    <li>Compared Logistic Regression, RF, XGBoost, SVM.</li>
+  </ul>
+  <a class="btn ghost" href="hospital.html"><i class="fa-solid fa-eye"></i> View Project</a>
+</div>
+       
     </div>
   </section>
 
@@ -279,4 +281,14 @@ new Typed('.typed', {
         const href=link.getAttribute('href');
         if(href && href.startsWith('#')){
           e.preventDefault();
-         
+          const id=href.substring(1);
+          const target=document.getElementById(id);
+          if(target){
+            window.scrollTo({top:target.offsetTop - navHeight, behavior:'smooth'});
+          }
+        }
+      });
+    });
+  </script>
+</body>
+</html>
